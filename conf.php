@@ -22,7 +22,7 @@ define('DB_USERNAME', '');
 define('DB_PASSWORD', '');
 
 // The URL jethro will be running at.  NB The final slash is important!!
-define('BASE_URL', 'http://example.com/jethro/');
+define('BASE_URL', 'https://churchos.hornsbyanglican.org.au');
 
 // Whether the system must be accessed by HTTPS.
 // If this is true, the BASE_URL above must begin with https://
