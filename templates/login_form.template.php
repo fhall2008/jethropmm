@@ -10,7 +10,7 @@
 		SizeDetector::printFormFields();
 		?>
 		<div id="login-header">
-			<h1><span>Jethro PMM </span> <?php echo ents(SYSTEM_NAME); ?></h1>
+			<h1><span>SPH Church OS </span> <?php echo ents(SYSTEM_NAME); ?></h1>
 		</div>
 		<div id="login-body" class="form-horizontal">
 			<noscript>
@@ -21,7 +21,7 @@
 			if (!empty($this->_error)) {
 				echo '<div class="alert alert-error">'.$this->_error.'</div>';
 			} else {
-				echo ' <h3>Control Centre Login</h3>';
+				echo ' <h3>Admin Login</h3>';
 			}
 			?>
 			<div class="control-group">
