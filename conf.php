@@ -1,6 +1,6 @@
 <?php
 /**
- * JETHRO PMM
+ * SPHChurchOS
  *
  * conf.php - edit this file to configure jethro
  *
@@ -15,11 +15,11 @@
 
 
 // Name of the mysql database, eg jethro
-define('DB_DATABASE', '');
+define('DB_DATABASE', 'sphchurchosdb');
 
 // Username and password of the mysql account with which to access the mysql database
-define('DB_USERNAME', '');
-define('DB_PASSWORD', '');
+define('DB_USERNAME', 'sphchurchosacc');
+define('DB_PASSWORD', 'sL85BBB6bxyEFT');
 
 // The URL jethro will be running at.  NB The final slash is important!!
 define('BASE_URL', 'https://churchos.hornsbyanglican.org.au/');
@@ -36,14 +36,14 @@ define('REQUIRE_HTTPS', TRUE);
 // Username and password of the mysql account that the MEMBERS area of Jethro should
 // use. Optional. This can be used to add an extra layer of security by only granting
 // access to the tables needed for members area features.
-define('DB_MEMBERS_USERNAME', '');
-define('DB_MEMBERS_PASSWORD', '');
+define('DB_MEMBERS_USERNAME', 'sphchurchosaccm');
+define('DB_MEMBERS_PASSWORD', 'MtV8chbnHZVw2v');
 
 // Username and password of the mysql account that the PUBLIC area of Jethro should
 // use. Optional. This can be used to add an extra layer of security by only granting
 // access to the tables needed for public  area features.
-define('DB_PUBLIC_USERNAME', '');
-define('DB_PUBLIC_PASSWORD', '');
+define('DB_PUBLIC_USERNAME', 'sphchurchosaccp');
+define('DB_PUBLIC_PASSWORD', '3hj9eETrdGpNKi');
 
 // Server on which mysql is running - usually localhost
 define('DB_HOST', 'localhost');
