@@ -787,13 +787,18 @@ class Person extends DB_Object
 		<?php
 	}
 
-	static function getStatusStats()
+	static function getStatusStats($congregationid=NULL)
 	{
-		$dummy = new Person();
 		$sql = 'SELECT ps.label as status, count(p.id)
 				FROM person p
-				JOIN person_status ps ON p.status = ps.id
-				GROUP BY ps.id';
+				JOIN person_status ps ON p.status = ps.id';
+		if ($congregationid !== NULL) {
+			$sql .= ' WHERE congregationid = '.(int)$congregationid;
+		}
+		$sql .= ' 
+			GROUP BY ps.id
+			ORDER BY ps.`rank` ASC
+			';
 		$res = $GLOBALS['db']->queryAll($sql, NULL, NULL, true);
 		return $res;
 	}
